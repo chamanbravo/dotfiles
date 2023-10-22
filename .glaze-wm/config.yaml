@@ -1,15 +1,6 @@
 gaps:
-  inner_gap: 5
+  inner_gap: 3
   outer_gap: 5
-
-focus_border_color:
-  active:
-    enabled: true
-    color: "#161616"
-
-  inactive:
-    enabled: false
-    color: "#161616"
 
 general:
   show_floating_on_top: false
@@ -32,10 +23,9 @@ bar:
     label: " "
   components_left:
     - type: "workspaces"
-      focused_workspace_background: "#181616"
-      focused_workspace_foreground: "#c4b28a"
-      default_workspace_background: "#181616"
-      default_workspace_foreground: "#c5c9c5"
+      focused_workspace_background: "#21262d"
+      focused_workspace_foreground: "#7ce48b"
+      displayed_workspace_background: "#21262d"
 
   components_center:
     - type: "window title"
@@ -164,8 +154,6 @@ keybindings:
     binding: "Alt+Shift+R"
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
-  # to start Windows Terminal and Git Bash respectively.
-  # - command: "exec %ProgramFiles%/WezTerm/wezterm-gui.exe"
   - command: "exec wt"
     binding: "Alt+Enter"
 
