@@ -1,0 +1,8 @@
+
+[golang]
+format = 'via [ $version](bold cyan) '
+
+[python]
+# Don't trigger for files with the py extension
+detect_extensions = ['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', 'requirements.txt', 'setup.py']
+
