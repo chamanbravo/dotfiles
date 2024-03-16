@@ -15,6 +15,10 @@ alias c.='code .'
 alias s.='start .'
 alias nf='neofetch'
 alias notes-preview='cd ~/Documents/notes/notes && markdown-preview -f index.md -t default-dark -p 34567 --no-opener'
+alias ssh-server='ssh debian@15.235.193.62'
+alias fzf="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --exclude venv --exclude AppData | fzf)'
+alias vif='vi $(fzf)'
 
 # git aliases
 alias gc='git clone'
