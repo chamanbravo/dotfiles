@@ -13,13 +13,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "<leader>vwm", function()
-    require("vim-with-me").StartVimWithMe()
-end)
-vim.keymap.set("n", "<leader>svwm", function()
-    require("vim-with-me").StopVimWithMe()
-end)
-
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -46,7 +39,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 -- telescope projects
-vim.keymap.set("n", "<leader>fp", "<cmd>Telescope neovim-project discover<CR>");
+-- vim.keymap.set("n", "<leader>fp", "<cmd>Telescope neovim-project discover<CR>");
 
 
 -- switch buffers
@@ -54,7 +47,4 @@ vim.keymap.set("n", "L", "<cmd>bn<CR>");
 vim.keymap.set("n", "H", "<cmd>bp<CR>");
 vim.keymap.set("n", "<leader>q", "<cmd>bd<CR>")
 vim.keymap.set("n", "<leader>x", "<cmd>q!<CR>")
-
--- auto indent
-vim.cmd("autocmd BufWritePre * :normal gg=G``<CR>")
 

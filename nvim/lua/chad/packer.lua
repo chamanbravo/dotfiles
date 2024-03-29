@@ -39,15 +39,14 @@ return require('packer').startup(function(use)
     }
 
     -- project session manager
-    use {
-        "coffebar/neovim-project",
-        requires = {
-            { "nvim-lua/plenary.nvim" },
-            { "nvim-telescope/telescope.nvim", tag = "0.1.4" },
-            { "Shatur/neovim-session-manager" },
-        }
-
-    };
+    -- use {
+    --     "coffebar/neovim-project",
+    --     requires = {
+    --         { "nvim-lua/plenary.nvim" },
+    --         { "nvim-telescope/telescope.nvim", tag = "0.1.4" },
+    --         { "Shatur/neovim-session-manager" },
+    --     }
+    -- };
 
     -- lualine
     use {
