@@ -41,10 +41,13 @@ end)
 -- telescope projects
 -- vim.keymap.set("n", "<leader>fp", "<cmd>Telescope neovim-project discover<CR>");
 
-
 -- switch buffers
 vim.keymap.set("n", "L", "<cmd>bn<CR>");
 vim.keymap.set("n", "H", "<cmd>bp<CR>");
 vim.keymap.set("n", "<leader>q", "<cmd>bd<CR>")
 vim.keymap.set("n", "<leader>x", "<cmd>q!<CR>")
+
+
+-- format python
+vim.api.nvim_set_keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.format()<CR>', { noremap = true, silent = true })
 

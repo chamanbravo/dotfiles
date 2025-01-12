@@ -1,1 +1,2 @@
 require("chad")
+require("plugins")

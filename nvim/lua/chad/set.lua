@@ -1,29 +1,36 @@
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.tabstop = 4      -- Number of spaces for a tab
+vim.opt.softtabstop = 4  -- Number of spaces for <Tab> in insert mode
+vim.opt.shiftwidth = 4   -- Number of spaces for auto-indents
+vim.opt.expandtab = true -- Convert tabs to spaces
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-
+-- Enable smart indentation
 vim.opt.smartindent = true
 
+-- Enable line wrapping
 vim.opt.wrap = true
 
+-- Disable swap files and backups, enable undo files
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = vim.fn.expand("~/.vim/undodir") -- Ensure compatibility
 vim.opt.undofile = true
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+-- Search settings
+vim.opt.hlsearch = false -- Disable highlight search
+vim.opt.incsearch = true -- Enable incremental search
 
+-- Enable true color support
 vim.opt.termguicolors = true
 
-vim.opt.scrolloff = 8
-vim.opt.isfname:append("@-@")
+-- Scrolling and display tweaks
+vim.opt.scrolloff = 8         -- Keep 8 lines visible around the cursor
+vim.opt.isfname:append("@-@") -- Allow '@-' in file names
 
+-- Reduce update time for better responsiveness
 vim.opt.updatetime = 50
-
 vim.opt.colorcolumn = "80"
-vim.opt.clipboard="unnamed"
+vim.opt.clipboard = "unnamed"
+
+vim.opt.shada = ""
